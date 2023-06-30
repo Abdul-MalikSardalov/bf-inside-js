@@ -1,6 +1,3 @@
-/**
- *
- */
 export const unicodeShuffle = (text = '', shift = 0) => {
   let encodedString = '';
 

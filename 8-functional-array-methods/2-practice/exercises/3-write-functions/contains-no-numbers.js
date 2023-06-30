@@ -6,4 +6,7 @@
  * @param {Array} arr - the array of values to filter
  * @returns {Array} - a new array with no strings
  */
-const containsNoNumbers = (arr = []) => {};
+export const containsNoNumbers = (arr = []) => {
+  const checkArr = arr.every((item) => typeof item !== 'number');
+  return checkArr ? true : false;
+};

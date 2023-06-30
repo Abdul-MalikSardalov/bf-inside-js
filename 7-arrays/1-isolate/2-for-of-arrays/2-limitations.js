@@ -20,15 +20,16 @@ console.log('-- begin --');
 const trees = ['birch', 'larch', 'oak', 'maple'];
 console.log(trees);
 
-console.log('-- reverse order: for ');
-for (let i = trees.length - 1; i >= 0; i--) {
-  const tree = trees[i];
-  console.log('- ' + tree);
-}
+// console.log('-- reverse order: for ');
+// for (let i = trees.length - 1; i >= 0; i--) {
+//   const tree = trees[i];
+//   console.log('- ' + tree);
+// }
 
-console.log('-- reverse order: for-of ');
-for (const tree of trees) {
-}
+// console.log('-- reverse order: for-of ');
+// for (const tree of trees.reverse()) {
+//   console.log('- ' + tree);
+// }
 
 console.log('-- every other item: for ');
 for (let i = 1; i <= trees.length - 1; i += 2) {
@@ -37,7 +38,12 @@ for (let i = 1; i <= trees.length - 1; i += 2) {
 }
 
 console.log('-- every other item: for-of ');
+let index = 1;
 for (const tree of trees) {
+  if (index % 2 !== 1) {
+    console.log('- ' + tree);
+  }
+  index++;
 }
 
 console.log('-- end --');

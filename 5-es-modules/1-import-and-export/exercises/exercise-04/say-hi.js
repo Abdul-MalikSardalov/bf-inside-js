@@ -2,4 +2,7 @@
 
 debugger;
 
-const sayHi = __;
+export const sayHi = (name) => {
+  let finalString = `Hello, ${name}!`;
+  return finalString;
+};

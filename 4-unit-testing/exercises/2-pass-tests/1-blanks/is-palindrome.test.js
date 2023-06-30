@@ -10,13 +10,13 @@
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let itIs = _;
+  let itIs = false;
   for (let i = 0; i <= toCheck.length / 2; i++) {
-    const left = toCheck[_];
-    const right = toCheck[_];
-    if (_) {
-      itIs = _;
-      __;
+    const left = toCheck[i];
+    const right = toCheck[toCheck.length - 1];
+    if (left === right) {
+      itIs = true;
+      // __;
     }
   }
   return itIs;

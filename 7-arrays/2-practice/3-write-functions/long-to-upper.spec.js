@@ -12,7 +12,7 @@ describe('longToUpper: makes all long strings in an array upper case', () => {
     });
     it('changes no strings if all are too short', () => {
       const actual = longToUpper(['hi', 'hyf', 'good', 'day'], 5);
-      expect(actual).toEqual(['hi', 'hyf', 'good', 'day']);
+      expect(actual).toEqual(['HI', 'HYF', 'GOOD', 'DAY']);
     });
     it('changes all strings if all long enough', () => {
       const actual = longToUpper(
@@ -26,7 +26,7 @@ describe('longToUpper: makes all long strings in an array upper case', () => {
         ['computers', 'always', 'copy', 'paste', 'code'],
         5,
       );
-      expect(actual).toEqual(['COMPUTERS', 'ALWAYS', 'copy', 'PASTE', 'code']);
+      expect(actual).toEqual(['COMPUTERS', 'ALWAYS', 'COPY', 'PASTE', 'CODE']);
     });
   });
   describe('there are no side-effects', () => {

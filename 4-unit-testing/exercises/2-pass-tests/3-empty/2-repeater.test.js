@@ -4,11 +4,23 @@
 
 /**
  * ___
- * @param {string} [text=''] - ___
- * @param {number} [repeats=_] - ___
- * @returns {string} ___
+ * @param {string} [text=''] - text to repeat
+ * @param {number} [repeats= 1] - number of repeats
+ * @returns {string} repeated string
  */
-__;
+
+const repeat = (stringToRepeat = '', num = 1) => {
+  let i = 0;
+  let reapeterString = '';
+  while (i < num) {
+    reapeterString += stringToRepeat;
+    i++;
+  }
+  return reapeterString;
+};
+
+// repeater('Pp', 4);
+// console.log(repeater('Pp', 4))
 
 describe('repeater: repeats a string a specific number of times', () => {
   it('can repeat a string once', () => {
@@ -21,7 +33,7 @@ describe('repeater: repeats a string a specific number of times', () => {
   });
   it('repeating the empty string is still empty', () => {
     const actual = repeat('', 12);
-    expect(actual).toEqual('PpPpPpPp');
+    expect(actual).toEqual('');
   });
   it('repeating anything 0 times is the empty string', () => {
     const actual = repeat('hoy!', 0);
