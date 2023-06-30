@@ -5,10 +5,16 @@
  * @param {string} [toCheck=''] - The string that might be a palindrome.
  * @returns {boolean} Is the string a palindrome?
  */
-export const isPalindrome = (toCheck = '') => {
-  let reversed = '';
-  for (const character of toCheck) {
-    reversed = character + reversed;
-  }
-  return toCheck === reversed;
-};
+// export const isPalindrome = (toCheck = '') => {
+//   let reversed = '';
+//   for (const character of toCheck) {
+//     reversed = character + reversed;
+//   }
+//   return toCheck === reversed;
+// };
+
+let name = 'Anastasiya';
+
+let newName = name.split('a')
+
+console.log(newName.lenght);

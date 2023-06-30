@@ -18,5 +18,6 @@
 // };
 
 // step 2: refactor main function (if possible)
-export const addNumber = (nums = [], addThis = 0) =>
-  nums.map((num) => num + addThis);
+export const addNumber = (nums = [], addThis = 0) => {
+  return nums.map((num) => num + addThis);
+};

@@ -3,12 +3,12 @@
  */
 export const sort = (numbers = [], up = true) => {
   // create a new array to avoid side-effects
-  const numbersCopy = [];
+  let numbersCopy = [...numbers];
 
-  // copy items from the argument to the new array
-  for (const num of numbers) {
-    numbersCopy.push(num);
-  }
+  // // copy items from the argument to the new array
+  // for (const num of numbers) {
+  //   numbersCopy.push(num);
+  // }
 
   // sort the new array by side-effect
   numbersCopy.sort((a, b) => a - b);

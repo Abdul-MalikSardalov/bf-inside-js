@@ -4,4 +4,7 @@
  * @param {string} str - the right string
  * @returns {string} the strings, joined
  */
-export const joinWithComma = () => {};
+export const joinWithComma = (string1, string2) => {
+  const separeted = string1 + ', ' + string2;
+  return separeted;
+};

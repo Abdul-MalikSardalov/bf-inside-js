@@ -1,12 +1,18 @@
 /**
  *
+ *
+ *
  */
-export const keepLongStrings = (strings = [], long = 5) => {
-  const longStrings = [];
-  for (const string of strings) {
-    if (string.length > long) {
-      longStrings.push(string);
+export const keepLongStrings = (arr = [], long = 5) => {
+  const longArr = [];
+  for (const element of arr) {
+    if (element.length > long) {
+      longArr.push(element);
     }
   }
-  return longStrings;
+  return longArr;
 };
+
+// console.log(
+//   keepLongStrings(['apple', 'banana', 'orange', 'grape', 'kiwi', 'watermelon']),
+// );

@@ -14,3 +14,24 @@ export const addToNumbers = (numbers = [], toAdd = 0) => {
   }
   return result;
 };
+
+// find-average.js
+export const theAverage = (arr = []) => {
+  const sum = arr.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0,
+  );
+  const result = sum / arr.length;
+  return result;
+};
+
+// search-inputs.js
+export const findTheCharacter = (arr = [], character = '') => {
+  let finalArr = [];
+  for (let char of arr) {
+    if (char.includes(character)) {
+      finalArr.push(char);
+    }
+  }
+  return finalArr;
+};

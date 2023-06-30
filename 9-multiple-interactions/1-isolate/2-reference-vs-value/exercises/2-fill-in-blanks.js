@@ -8,8 +8,18 @@ console.log('-- begin --');
 //  how many solutions can you find?
 // psst.  use JS Tutor & the debugger
 
-const object1 = _;
-const object2 = _;
+const object1 = {
+  name: 'Malik',
+  lastName: 'Sardalov',
+  city: 'Namur',
+  age: 23,
+};
+const object2 = {
+  name: 'Malik',
+  lastName: 'Sardalov',
+  city: 'Namur',
+  age: 23,
+};
 
 const test1 = object1 !== object2;
 console.assert(test1, 'Test 1');

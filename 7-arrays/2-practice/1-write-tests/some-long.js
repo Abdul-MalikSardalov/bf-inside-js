@@ -11,3 +11,4 @@ export const someLong = (strings = [], long = 5) => {
   }
   return someAreLong;
 };
+

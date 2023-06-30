@@ -20,29 +20,13 @@ const reverseWordOrPhrase = () => {
     const newWords = [];
 
     for (const word of splitText) {
-      /// BEGIN: refactor this to call `reverse`
-      // const reversedWord = reverse(__);
-
-      let reversedWord = '';
-      for (const char of word) {
-        reversedWord = char + reversedWord;
-      }
-      /// END: refactor
-
+      const reversedWord = reverse(word);
       newWords.push(reversedWord);
     }
 
     reversed = newWords.join(' ');
   } else {
-    /// BEGIN: refactor this to call `reverse`
-    // reversed = reverse(__);
-
-    let reversedText = '';
-    for (const char of userText) {
-      reversedText = char + reversedText;
-    }
-    reversed = reversedText;
-    /// END: refactor
+    reversed = reverse(userText);
   }
 
   // --- display the reversed input ---
@@ -50,3 +34,4 @@ const reverseWordOrPhrase = () => {
 };
 
 document.getElementById('do-it').addEventListener('click', reverseWordOrPhrase);
+

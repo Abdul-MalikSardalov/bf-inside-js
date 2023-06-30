@@ -2,7 +2,7 @@ import { allLong } from './all-long.js';
 
 describe('allLong: checks if all the strings in an array are long', () => {
   describe('checking if all strings are long', () => {
-    it('returns true if the array is empty', () => {
+    it('returns false if the array is empty', () => {
       const returned = allLong([], 3);
       expect(returned).toEqual(true);
     });

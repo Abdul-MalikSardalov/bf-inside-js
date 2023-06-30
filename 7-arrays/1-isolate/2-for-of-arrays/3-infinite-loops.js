@@ -10,8 +10,10 @@ console.log('-- begin --');
 
 const allNumbers = [0];
 for (const number of allNumbers) {
-  allNumbers.push(number + 1);
-  console.log(allNumbers);
+  if (allNumbers.length !== 10) {
+    allNumbers.push(number + 1);
+    console.log(allNumbers);
+  } else break;
 }
 
 console.log('-- end --');

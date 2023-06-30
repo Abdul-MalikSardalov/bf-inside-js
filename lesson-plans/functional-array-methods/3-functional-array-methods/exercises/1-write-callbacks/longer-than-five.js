@@ -4,4 +4,10 @@
  * @param {string} str - the string to check
  * @returns {boolean} is the string longer than 5?
  */
-export const longerThanFive = () => {};
+export const longerThanFive = (string) => {
+  if (string.length > 5) {
+    return true;
+  } else {
+    return false;
+  }
+};

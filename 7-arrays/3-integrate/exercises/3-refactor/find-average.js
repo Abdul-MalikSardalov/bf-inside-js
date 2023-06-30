@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-// import { __ } from '../utils/__.js';
+import { theAverage } from '../utils/add-to-numbers.js';
 
 /* ===== main program (use functions) ===== */
 
@@ -38,19 +38,27 @@ console.log(numbers);
 
 // -- calculate the average --
 /* == BEGIN: refactor the averaging logic == */
-let theAverage = 0;
-for (let i = 0; i < numbers.length; i++) {
-  const number = numbers[i];
-  theAverage += number / numbers.length;
-}
+
+let finalResult = theAverage(numbers);
+
+// let theAverage = 0;
+// // for (let i = 0; i < numbers.length; i++) {
+// //   const number = numbers[i];
+// //   theAverage += number / numbers.length;
+// // }
+// const sum = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0,
+// );
+// const theAverage = sum / numbers.length;
 /* == END: refactoring == */
-console.log(theAverage);
+console.log(finalResult);
 
 // -- build the final message --
 const message = `numbers:
 - ${numbers.join('\n- ')}
 
-average: ${theAverage}`;
+average: ${finalResult}`;
 
 // -- alert the final message --
 alert(message);
